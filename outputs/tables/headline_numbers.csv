@@ -1,0 +1,37 @@
+metric,value,unit
+bank_rate_last_pct,3.75,percent
+bank_rate_min_pct,0.1,percent
+bank_rate_max_pct,5.25,percent
+n_bank_rate_regimes,26,count
+sonia_last_pct,3.734,percent
+sonia_mean_pct,1.3832,percent
+sonia_bank_rate_spread_mean_bp,-4.16,bp
+gilt10_last_pct,5.3046,percent
+gilt10_vs_bank_rate_last_bp,155.46,bp
+gbpusd_last,1.3301,USD per GBP
+gbpeur_last,1.194,EUR per GBP
+gbpusd_worst_drawdown,-0.3742,fraction
+synthetic_interest_gbp,464864.62,GBP
+synthetic_peak_drawn_gbp,4132638.46,GBP
+synthetic_share_weeks_drawn,0.7819,fraction
+arima_order,"[2, 1, 2]","p,d,q"
+arima_multistep_mae_bp,7.88,bp
+arima_multistep_rmse_bp,9.53,bp
+arima_onestep_mae_bp,6.04,bp
+arima_onestep_rmse_bp,7.74,bp
+arima_2022_episode_mae_bp,119.3,bp
+arima_2022_episode_rmse_bp,148.85,bp
+var_hist_1d_95_gbp,18946.75,GBP
+var_hist_1d_99_gbp,30196.52,GBP
+var_hist_10d_95_gbp,51726.28,GBP
+var_hist_10d_99_gbp,65906.49,GBP
+var_param_1d_95_gbp,18892.54,GBP
+var_param_1d_99_gbp,26720.08,GBP
+var_param_10d_95_gbp,59743.45,GBP
+var_param_10d_99_gbp,84496.3,GBP
+mc_p_policy_breach,0.0,probability
+mc_p_hard_min_breach,0.0,probability
+mc_p_negative_cash,0.0,probability
+mc_liquidity_at_risk_95_min_cash_gbp,1500000.0,GBP
+mc_facility_at_risk_95_peak_drawn_gbp,1395029.89,GBP
+mc_undrawn_headroom_at_95_gbp,4604970.11,GBP
