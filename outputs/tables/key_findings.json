@@ -1,0 +1,452 @@
+{
+  "download": {
+    "downloaded_at": "2026-10-29T20:19:57+00:00",
+    "source_url": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Jan/2010&Dateto=now&SeriesCodes=IUDBEDR,IUDSOIA,IUDSNPY,IUDMNPY,IUDLNPY,XUDLUSS,XUDLERS&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+    "sha256": "be854625335af1ec641fbabae9435d8a187379de13e8d939fac77f2b9076a5d5",
+    "user_agent": "treasury-analytics-portfolio/1.0 (educational; +https://github.com/MatthewAllmark)",
+    "fallback_user_agent_used": false,
+    "attempts": [
+      {
+        "user_agent": "treasury-analytics-portfolio/1.0 (educational; +https://github.com/MatthewAllmark)",
+        "ok": true
+      }
+    ],
+    "n_rows": 4250,
+    "date_min_raw": "04 Jan 2010",
+    "date_max_raw": "28 Oct 2026",
+    "series_codes": [
+      "IUDBEDR",
+      "IUDSOIA",
+      "IUDSNPY",
+      "IUDMNPY",
+      "IUDLNPY",
+      "XUDLUSS",
+      "XUDLERS"
+    ],
+    "licence": "Open Government Licence v3.0"
+  },
+  "assumptions": {
+    "company": "Northvale Components Ltd",
+    "label": "SYNTHETIC EXAMPLE \u2014 Northvale Components Ltd (fictional), seed 42",
+    "seed": 42,
+    "history_start": "2016-01-08",
+    "base_weekly_receipts_gbp": 1480000.0,
+    "base_weekly_usd_costs": 780000.0,
+    "base_weekly_eur_costs": 210000.0,
+    "facility_limit_gbp": 6000000.0,
+    "margin_bp": 175.0,
+    "min_cash_policy_gbp": 1500000.0,
+    "hard_min_cash_gbp": 500000.0,
+    "opening_cash_gbp": 1500000.0,
+    "opening_drawn_gbp": 2000000.0,
+    "surplus_cap_gbp": 2000000.0,
+    "day_count": "simple Actual/365 on the opening drawn balance, 7/365",
+    "interest_cover_example": 2.0,
+    "soft_utilisation_example": 0.8
+  },
+  "market": {
+    "date_min": "2010-01-04",
+    "date_max": "2026-10-28",
+    "n_bank_rate": 4250,
+    "n_sonia": 4249,
+    "n_gilt10": 4249,
+    "bank_rate_min": 0.1,
+    "bank_rate_max": 5.25,
+    "bank_rate_last": 3.75,
+    "bank_rate_last_date": "2026-10-28",
+    "bank_rate_mean": 1.4253,
+    "n_regimes": 26,
+    "current_regime_start": "2025-12-18",
+    "current_regime_rate": 3.75,
+    "sonia_min": 0.0394,
+    "sonia_max": 5.2001,
+    "sonia_last": 3.734,
+    "sonia_last_date": "2026-10-27",
+    "sonia_mean": 1.3832,
+    "spread_bp_mean": -4.16,
+    "spread_bp_median": -4.35,
+    "spread_bp_last": -1.6,
+    "spread_bp_mean_since_2022": -4.9,
+    "gilt10_min": 0.1239,
+    "gilt10_max": 5.4292,
+    "gilt10_last": 5.3046,
+    "gilt10_last_date": "2026-10-27",
+    "gilt10_vs_bank_rate_bp_last": 155.46,
+    "gilt10_vs_bank_rate_bp_min": -172.1,
+    "gilt10_vs_bank_rate_bp_min_date": "2023-12-27",
+    "gbpusd_first": 1.6121,
+    "gbpusd_last": 1.3301,
+    "gbpusd_min": 1.0745,
+    "gbpusd_max": 1.7169,
+    "gbpusd_change": -0.1749,
+    "gbpusd_worst_drawdown": -0.3742,
+    "gbpusd_worst_drawdown_date": "2022-09-28",
+    "gbpeur_first": 1.1166,
+    "gbpeur_last": 1.194,
+    "gbpeur_min": 1.0681,
+    "gbpeur_max": 1.4402,
+    "gbpeur_change": 0.0693,
+    "gbpeur_worst_drawdown": -0.2584,
+    "gbpeur_worst_drawdown_date": "2020-03-23",
+    "synthetic": {
+      "label": "SYNTHETIC EXAMPLE \u2014 Northvale Components Ltd (fictional), seed 42",
+      "n_weeks": 564,
+      "start": "2016-01-08",
+      "end": "2026-10-23",
+      "receipts_gbp": 886520326.5,
+      "net_operating_gbp": 15823192.53,
+      "interest_gbp": 464864.62,
+      "dividend_gbp": 14118848.38,
+      "end_cash_gbp": 1500000.0,
+      "end_drawn_gbp": 760520.47,
+      "min_cash_gbp": 1500000.0,
+      "peak_drawn_gbp": 4132638.46,
+      "peak_utilisation": 0.6888,
+      "share_of_weeks_drawn": 0.7819,
+      "weeks_hard_cash_breach": 0,
+      "weeks_soft_utilisation": 0,
+      "interest_cover_last_52w": 79.65
+    }
+  },
+  "rate_forecast": {
+    "frequency": "monthly average of daily SONIA",
+    "n_months": 202,
+    "months_dropped_under_15_days": 0,
+    "sample_start": "2010-01",
+    "sample_end": "2026-10",
+    "order": [
+      2,
+      1,
+      2
+    ],
+    "trend": "n",
+    "selection_aic": -426.53,
+    "refit_aic": -462.17,
+    "orders_tried": 17,
+    "orders_failed": 0,
+    "holdout_start": "2025-11",
+    "holdout_end": "2026-10",
+    "multistep_12m": {
+      "n": 12,
+      "mae_pp": 0.0788,
+      "rmse_pp": 0.0953,
+      "mae_bp": 7.88,
+      "rmse_bp": 9.53,
+      "mape_pct": 2.1,
+      "actual_mean": 3.762,
+      "predicted_mean": 3.7154,
+      "actual_end": 3.7331,
+      "predicted_end": 3.5533
+    },
+    "onestep_24m": {
+      "n": 24,
+      "mae_pp": 0.0604,
+      "rmse_pp": 0.0774,
+      "mae_bp": 6.04,
+      "rmse_bp": 7.74,
+      "mape_pct": 1.45,
+      "actual_mean": 4.0559,
+      "predicted_mean": 4.0597,
+      "actual_end": 3.7331,
+      "predicted_end": 3.7263
+    },
+    "hiking_cycle_episode": {
+      "train_end": "2021-12",
+      "forecast_start": "2022-01",
+      "forecast_end": "2022-12",
+      "order_note": "Coefficients are fit on data through December 2021. The order is the one selected on the later training sample, so this episode illustrates the path and is not a pure real-time selection.",
+      "n": 12,
+      "mae_pp": 1.193,
+      "rmse_pp": 1.4885,
+      "mae_bp": 119.3,
+      "rmse_bp": 148.85,
+      "mape_pct": 76.64,
+      "actual_mean": 1.3962,
+      "predicted_mean": 0.2032,
+      "actual_end": 3.1779,
+      "predicted_end": 0.2495
+    },
+    "forward_month_end": "2027-11",
+    "forward_end_sonia": 3.7325,
+    "parallel_shocks_pct": {
+      "minus_200bp": 1.7338,
+      "minus_100bp": 2.7338,
+      "base": 3.7338,
+      "plus_100bp": 4.7338,
+      "plus_200bp": 5.7338
+    },
+    "jump_off_daily_sonia": 3.7338
+  },
+  "cash_forecast": {
+    "origin_week": "2026-10-23",
+    "jump_off_sonia_pct": 3.7338,
+    "fx_held_at_usd_per_gbp": 1.3387,
+    "fx_held_at_eur_per_gbp": 1.1947,
+    "opening_cash_gbp": 1500000.0,
+    "opening_drawn_gbp": 760520.47,
+    "scenarios": [
+      {
+        "scenario": "minus_200bp",
+        "sonia": "1.7338% flat",
+        "week_13_ending": "2027-01-22",
+        "week_52_ending": "2027-10-22",
+        "horizon_13w": {
+          "interest_gbp": 1295.29,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 775889.65,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 775889.65
+        },
+        "horizon_52w": {
+          "interest_gbp": 17758.3,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 937455.85,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 1989935.4
+        }
+      },
+      {
+        "scenario": "minus_100bp",
+        "sonia": "2.7338% flat",
+        "week_13_ending": "2027-01-22",
+        "week_52_ending": "2027-10-22",
+        "horizon_13w": {
+          "interest_gbp": 1667.22,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 776031.88,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 776031.88
+        },
+        "horizon_52w": {
+          "interest_gbp": 22885.8,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 940944.03,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 1991450.69
+        }
+      },
+      {
+        "scenario": "base",
+        "sonia": "3.7338% flat",
+        "week_13_ending": "2027-01-22",
+        "week_52_ending": "2027-10-22",
+        "horizon_13w": {
+          "interest_gbp": 2039.2,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 776174.12,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 776174.12
+        },
+        "horizon_52w": {
+          "interest_gbp": 28026.79,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 944441.31,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 1992967.22
+        }
+      },
+      {
+        "scenario": "plus_100bp",
+        "sonia": "4.7338% flat",
+        "week_13_ending": "2027-01-22",
+        "week_52_ending": "2027-10-22",
+        "horizon_13w": {
+          "interest_gbp": 2411.24,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 776316.35,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 776316.35
+        },
+        "horizon_52w": {
+          "interest_gbp": 33181.3,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 947947.7,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 1994484.98
+        }
+      },
+      {
+        "scenario": "plus_200bp",
+        "sonia": "5.7338% flat",
+        "week_13_ending": "2027-01-22",
+        "week_52_ending": "2027-10-22",
+        "horizon_13w": {
+          "interest_gbp": 2783.34,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 776458.59,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 776458.59
+        },
+        "horizon_52w": {
+          "interest_gbp": 38349.35,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 951463.21,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 1996003.98
+        }
+      },
+      {
+        "scenario": "arima",
+        "sonia": "monthly ARIMA path, held flat within each month",
+        "week_13_ending": "2027-01-22",
+        "week_52_ending": "2027-10-22",
+        "horizon_13w": {
+          "interest_gbp": 2039.34,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 776174.16,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 776174.16
+        },
+        "horizon_52w": {
+          "interest_gbp": 28023.05,
+          "end_cash_gbp": 1500000.0,
+          "end_drawn_gbp": 944437.72,
+          "min_cash_gbp": 1500000.0,
+          "peak_drawn_gbp": 1992965.81
+        }
+      }
+    ]
+  },
+  "fx_var": {
+    "exposure_definition": "Next 4 contractual weeks of unhedged USD and EUR purchases",
+    "exposure_weeks": [
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20"
+    ],
+    "usd_notional": 3594963.95,
+    "eur_notional": 967874.91,
+    "gbp_value_usd_payables": 2685414.17,
+    "gbp_value_eur_payables": 810140.54,
+    "gbp_value_total": 3495554.71,
+    "spot_usd_per_gbp": 1.3387,
+    "spot_eur_per_gbp": 1.1947,
+    "window_losses": 252,
+    "window_end": "2026-10-28",
+    "window_first_loss_end": "2025-10-30",
+    "daily_sigma_gbp": 11485.85,
+    "current_var_gbp": {
+      "hist_1d_95": 18946.75,
+      "hist_1d_99": 30196.52,
+      "hist_10d_95": 51726.28,
+      "hist_10d_99": 65906.49,
+      "param_1d_95": 18892.54,
+      "param_1d_99": 26720.08,
+      "param_10d_95": 59743.45,
+      "param_10d_99": 84496.3
+    },
+    "backtest_1d": {
+      "historical_95": {
+        "hits": 215,
+        "n": 3997,
+        "expected_hits": 199.85,
+        "hit_rate": 0.05379,
+        "lr": 1.181,
+        "pvalue": 0.277146,
+        "reject_5pct": false
+      },
+      "historical_99": {
+        "hits": 63,
+        "n": 3997,
+        "expected_hits": 39.97,
+        "hit_rate": 0.015762,
+        "lr": 11.405,
+        "pvalue": 0.00073247,
+        "reject_5pct": true
+      },
+      "parametric_95": {
+        "hits": 200,
+        "n": 3997,
+        "expected_hits": 199.85,
+        "hit_rate": 0.050038,
+        "lr": 0.0001,
+        "pvalue": 0.99131525,
+        "reject_5pct": false
+      },
+      "parametric_99": {
+        "hits": 76,
+        "n": 3997,
+        "expected_hits": 39.97,
+        "hit_rate": 0.019014,
+        "lr": 25.9449,
+        "pvalue": 3.5e-07,
+        "reject_5pct": true
+      }
+    },
+    "backtest_10d_nonoverlapping": {
+      "historical_95": {
+        "hits": 27,
+        "n": 398,
+        "expected_hits": 19.9,
+        "hit_rate": 0.067839,
+        "lr": 2.4105,
+        "pvalue": 0.12052446,
+        "reject_5pct": false
+      },
+      "historical_99": {
+        "hits": 10,
+        "n": 398,
+        "expected_hits": 3.98,
+        "hit_rate": 0.025126,
+        "lr": 6.4785,
+        "pvalue": 0.01091863,
+        "reject_5pct": true
+      },
+      "parametric_95": {
+        "hits": 24,
+        "n": 398,
+        "expected_hits": 19.9,
+        "hit_rate": 0.060302,
+        "lr": 0.8367,
+        "pvalue": 0.3603545,
+        "reject_5pct": false
+      },
+      "parametric_99": {
+        "hits": 3,
+        "n": 398,
+        "expected_hits": 3.98,
+        "hit_rate": 0.007538,
+        "lr": 0.2664,
+        "pvalue": 0.60574463,
+        "reject_5pct": false
+      }
+    }
+  },
+  "monte_carlo": {
+    "label": "SYNTHETIC EXAMPLE \u2014 Northvale Components Ltd (fictional), seed 42",
+    "n_paths": 10000,
+    "seed": 42,
+    "horizon_weeks": 13,
+    "horizon_end": "2027-01-22",
+    "zero_shocks": false,
+    "covariance_weeks": 156,
+    "covariance_start": "2023-11-03",
+    "covariance_end": "2026-10-23",
+    "cholesky_jitter": 0.0,
+    "weekly_std_dsonia_pp": 0.0483,
+    "weekly_std_gbpusd_log": 0.008912,
+    "weekly_std_gbpeur_log": 0.005359,
+    "corr_dsonia_gbpusd": -0.0131,
+    "corr_dsonia_gbpeur": -0.0931,
+    "corr_gbpusd_gbpeur": 0.2388,
+    "mean_weekly_dsonia_not_applied_pp": -0.0093,
+    "p_policy_breach": 0.0,
+    "p_hard_min_breach": 0.0,
+    "p_negative_cash": 0.0,
+    "p_facility_limit": 0.0,
+    "liquidity_at_risk_95_min_cash_gbp": 1500000.0,
+    "shortfall_vs_policy_at_95_gbp": 0.0,
+    "p50_min_cash_gbp": 1500000.0,
+    "p5_terminal_cash_gbp": 1500000.0,
+    "p50_terminal_cash_gbp": 1500000.0,
+    "facility_at_risk_95_peak_drawn_gbp": 1395029.89,
+    "undrawn_headroom_at_95_gbp": 4604970.11,
+    "p50_peak_drawn_gbp": 862678.85,
+    "p50_terminal_drawn_gbp": 771565.96,
+    "p95_terminal_drawn_gbp": 1354925.56,
+    "p50_interest_gbp": 2142.57,
+    "p95_interest_gbp": 3585.8,
+    "mean_receipts_in_transit_gbp": 116167.29
+  }
+}

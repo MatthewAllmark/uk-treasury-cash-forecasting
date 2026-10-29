@@ -1,0 +1,39 @@
+{
+  "downloaded_at": "2026-10-29T20:19:57+00:00",
+  "source_url": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Jan/2010&Dateto=now&SeriesCodes=IUDBEDR,IUDSOIA,IUDSNPY,IUDMNPY,IUDLNPY,XUDLUSS,XUDLERS&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+  "user_agent": "treasury-analytics-portfolio/1.0 (educational; +https://github.com/MatthewAllmark)",
+  "attempts": [
+    {
+      "user_agent": "treasury-analytics-portfolio/1.0 (educational; +https://github.com/MatthewAllmark)",
+      "ok": true
+    }
+  ],
+  "licence": "Open Government Licence v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "boe_terms_url": "https://www.bankofengland.co.uk/legal/terms-and-conditions",
+  "sha256": "be854625335af1ec641fbabae9435d8a187379de13e8d939fac77f2b9076a5d5",
+  "n_bytes": 248396,
+  "n_rows": 4250,
+  "header": [
+    "DATE",
+    "IUDBEDR",
+    "IUDSOIA",
+    "IUDSNPY",
+    "IUDMNPY",
+    "IUDLNPY",
+    "XUDLUSS",
+    "XUDLERS"
+  ],
+  "series_codes": [
+    "IUDBEDR",
+    "IUDSOIA",
+    "IUDSNPY",
+    "IUDMNPY",
+    "IUDLNPY",
+    "XUDLUSS",
+    "XUDLERS"
+  ],
+  "date_min_raw": "04 Jan 2010",
+  "date_max_raw": "28 Oct 2026",
+  "fallback_user_agent_used": false
+}
